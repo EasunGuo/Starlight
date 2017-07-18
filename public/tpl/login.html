@@ -1,0 +1,21 @@
+<ion-header-bar class="bar-dark">
+    <ion-title>Starlight</ion-title>
+</ion-header-bar>
+
+<ion-content class="has-header has-footer">
+    <div class="list list-inset padding-top">
+        <div class="text-center">
+            <a class="button button-icon icon ion-social-instagram-outline"></a>
+        </div>
+        <br>
+        <label class="item item-input">
+            <input ng-model="user.uname" type="text" placeholder="用户名" autofocus>
+        </label>
+        <label class="item item-input">
+            <input ng-model="user.upwd" type="password" placeholder="密&emsp;码">
+        </label>
+        <br>
+        <button ng-click="toLogin()" class="button button-block button-dark">Login</button>
+        <button ui-sref="register" class="button button-clear button-block button-stable">Register</button>
+    </div>
+</ion-content>

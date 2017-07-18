@@ -1,0 +1,41 @@
+.hot-content strong {
+    position: absolute;
+    top: 35%;
+    right: 20%;
+}
+
+.me-content-header {
+    width: 100%;
+    position: absolute;
+    top: 43px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #888;
+}
+
+.me-content-header .button-bar a {
+    line-height: 30px;
+}
+
+.me-content-body {
+    top: 148px;
+}
+
+.me-content-body .list .content {
+    float: left;
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.me-content-body .list .card {
+    float: left;
+    padding: 6px;
+    margin: 5px;
+    width: 46.75%;
+}
+
+.set-content .list .tags {
+    float: left;
+    padding-right: 10px;
+    margin: 5px 0;
+}

@@ -1,0 +1,28 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<ion-content class="has-header has-footer hot-content">
+    <div class="bar item-input-inset bar-dark">
+        <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input ng-model="searchTxt.kw" type="text" placeholder="Search">
+        </label>
+    </div>
+
+    <div ng-repeat="item in hotPic" class="list card">
+        <div class="item item-image">
+            <img ng-src="imgs/{{item.purl}}">
+        </div>
+        <div class="item item-icon-right">
+            <div>
+                <h2>{{item.pname}}</h2>
+                <p>{{item.uname}}</p>
+            </div>
+            <strong class="assertive">{{item.likeNum}}</strong>
+            <button ng-click="collectPic(item.pid)"
+                    ng-class="{'assertive': isLike(item.pid)||isCollect[item.pid]}"
+                    class="button button-icon icon ion-heart"></button>
+        </div>
+    </div>
+</ion-content>
+
+<div ng-include="'tpl/include/footer.html'"></div>

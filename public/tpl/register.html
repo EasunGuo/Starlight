@@ -1,0 +1,27 @@
+<ion-header-bar class="bar-dark">
+    <button ui-sref="login" class="button button-clear">
+        <i class="icon ion-ios-arrow-left"></i>
+        返回
+    </button>
+    <ion-title>Starlight</ion-title>
+</ion-header-bar>
+
+<ion-content class="has-header has-footer">
+    <div class="list list-inset padding-top">
+        <div class="text-center">
+            <a class="button button-icon icon ion-social-instagram-outline"></a>
+        </div>
+        <br>
+        <label class="item item-input">
+            <input ng-model="newUser.uname" type="text" placeholder="用户名" autofocus>
+        </label>
+        <label class="item item-input">
+            <input ng-model="newUser.upwd" type="password" placeholder="密&emsp;码">
+        </label>
+        <label class="item item-input">
+            <input ng-model="newUser.upwd2" type="password" placeholder="确认密码">
+        </label>
+        <br>
+        <button ng-click="toRegister()" class="button button-block button-dark">Register</button>
+    </div>
+</ion-content>
